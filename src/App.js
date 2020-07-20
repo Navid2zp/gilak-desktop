@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "./styles/style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { MemoryRouter, Switch, Route } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import HomePage from "./pages/Home";
+import WordPage from "./pages/Word";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import AlphabetPage from "./pages/Alphabet";
+import WordsPage from "./pages/Words";
+import SearchPage from "./pages/Search";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MemoryRouter>
+      <Container className="" fluid style={{minHeight: "100%", height: "100%"}}>
+      {/* <div
+        style={{
+		  minHeight: "100%",
+          position: "relative"
+        }}
+      > */}
+        <Header />
+        <Switch>
+          <Route path="/list" render={(props) => <AlphabetPage {...props} />} />
+          <Route path="/search" render={(props) => <SearchPage {...props} />} />
+          <Route path="/words/:char" render={(props) => <WordsPage {...props} />} />
+          <Route path="/word/:id" render={(props) => <WordPage {...props} />} />
+          <Route path="/" render={(props) => <HomePage {...props} />} />
+        </Switch>
+        {/* <Footer /> */}
+      {/* </div> */}
+      </Container>
+      <Footer />
+    </MemoryRouter>
   );
 }
 

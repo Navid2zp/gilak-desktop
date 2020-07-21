@@ -9,6 +9,7 @@
   "homepage": "./",
   "main": "public/electron.js",
   "build": {
+	"email": "navid2zp@gmail.com",
     "appId": "gilak.arvix.studio",
     "directories": {
       "buildResources": "assets"

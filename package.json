@@ -1,15 +1,13 @@
 {
   "name": "gilak",
   "productName": "Gilak",
-  "author": "Navid Zarepak",
-  "email": "navid2zp@gmail.com",
+  "author": "Navid Zarepak <navid2zp@gmail.com>",
   "description": "Gilaki dictionary app",
   "version": "0.1.2",
   "private": true,
   "homepage": "./",
   "main": "public/electron.js",
   "build": {
-	"email": "navid2zp@gmail.com",
     "appId": "gilak.arvix.studio",
     "directories": {
       "buildResources": "assets"

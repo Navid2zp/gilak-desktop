@@ -16,8 +16,17 @@
       "target": "NSIS"
     },
     "mac": {
-		"category": "public.app-category.reference"
-	},
+      "category": "public.app-category.reference"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "snap",
+        "deb",
+        "freebsd",
+        "rpm"
+      ]
+    },
     "extraResources": [
       {
         "from": "db",
@@ -63,7 +72,7 @@
     ]
   },
   "devDependencies": {
-	"electron-builder": "^22.7.0",
-	"electron": "^9.1.0"
+    "electron-builder": "^22.7.0",
+    "electron": "^9.1.0"
   }
 }

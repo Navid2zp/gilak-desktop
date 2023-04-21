@@ -45,7 +45,7 @@
     "react-dom": "^16.13.1",
     "react-lazyload": "^3.0.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "sqlite3": "^5.0.0"
   },
   "scripts": {

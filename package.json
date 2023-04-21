@@ -46,7 +46,7 @@
     "react-lazyload": "^3.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.1.5"
   },
   "scripts": {
     "electron": "electron .",
